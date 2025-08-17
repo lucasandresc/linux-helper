@@ -1,7 +1,8 @@
 #!/bin/bash
 
+clear
 echo "╔════════════════════════════════╗"
-echo "║     Welcome to Linux Learner   ║"
+echo "║     Welcome to Linux Helper    ║"
 echo "║                                ║"
 echo "║  Interactive Command Helper    ║"
 echo "║     for Linux Beginners        ║"
@@ -10,8 +11,27 @@ echo ""
 
 echo "Please select an option: "
 
-file_commands=("mv" "ls" "cp" "rm" "find" "touch" "cd" "cat" "less" "pwd" "zip" "tar" "head" "tail" "mkdir" "rmdir" "file" "wc")
-system_commands=("clear" "echo" "man" "sudo" "grep" "uname" "whoami" "chmod" "chown" "which" "history" "ps" "ps aux" "kill" "killall" "df" "du" "nano" "vim" "nvim" "date" "uptime" "free" "lscpu""w")
-network_commands=("ping" "wget" "curl" "ssh")
+source ./file_commands.sh
+source ./system_commands.sh
+source ./network_commands.sh
 
 echo ""
+
+categories=("File Commands" "System Commands" "Network Commands" "Exit")
+
+select category in "${categories[@]}"; do
+    case $category in
+        "File Commands")
+            show_file_commands
+            ;;
+        "System Commands")
+            show_system_commands
+            ;;
+        "Network Commands")
+            show_network_commands
+            ;;
+        "Exit")
+            break
+            ;;
+    esac
+done

@@ -13,7 +13,7 @@ show_system_commands() {
     echo "Please select an option: "
     echo ""
 
-    local system_commands=("clear" "echo" "man" "sudo" "grep" "uname" "whoami" "chmod" "chown" "which" "history" "ps" "ps aux" "kill" "killall" "df" "du" "nano" "vim" "nvim" "date" "uptime" "free" "lscpu" "w" "Back to main menu")
+    local system_commands=("clear" "echo" "man" "sudo" "grep" "uname" "whoami" "chmod" "chown" "which" "history" "ps" "kill" "killall" "df" "du" "nano" "vim" "nvim" "date" "uptime" "free" "lscpu" "w" "Back to main menu")
 
     select option in "${system_commands[@]}"; do
         case $option in
@@ -23,6 +23,49 @@ show_system_commands() {
                 ;;
             "man")
                 ;;
+            "sudo")
+                ;;
+            "grep")
+                ;;
+            "uname")
+                ;;
+            "whoami")
+                ;;
+            "chmod")
+                ;;
+            "chown")
+                ;;
+            "which")
+                ;;
+            "history")
+                ;;
+            "ps")
+                ;;
+            "kill")
+                ;;
+            "killall")
+                ;;
+            "df")
+                ;;
+            "du")
+                ;;
+            "nano")
+                ;;
+            "vim")
+                ;;
+            "nvim")
+                ;;
+            "date")
+                ;;
+            "uptime")
+                ;;
+            "free")
+                ;;
+            "lscpu")
+                ;;
+            "w")
+                ;;
+
             "Back to main menu")
                 echo ""
                 echo "Returning to main menu..."

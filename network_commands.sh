@@ -1,14 +1,19 @@
 #!/bin/bash
+show_header () {
+    echo ""
+    echo "                          ╔════════════════════════════════╗"
+    echo "                          ║      File System Commands      ║"
+    echo "                          ║                                ║"
+    echo "                          ║   Navigate, create, modify     ║"
+    echo "                          ║   and manage files and dirs    ║"
+    echo "                          ╚════════════════════════════════╝"
+    echo ""
+
+}
 
 show_network_commands() {
     clear
-    echo ""
-    echo "                          ╔════════════════════════════════╗"
-    echo "                          ║       Network Commands         ║"
-    echo "                          ║                                ║"
-    echo "                          ║   Connect, download and        ║"
-    echo "                          ║   test network connectivity    ║"
-    echo "                          ╚════════════════════════════════╝"
+    show_header
     echo ""
     echo "Please select an option: "
     echo ""
@@ -18,6 +23,8 @@ show_network_commands() {
     select option in "${network_commands[@]}"; do
         case $option in
             "ping")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -26,10 +33,29 @@ show_network_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -39,6 +65,8 @@ show_network_commands() {
                 done
                 ;;
             "wget")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -47,10 +75,29 @@ show_network_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -61,6 +108,8 @@ show_network_commands() {
                 ;;
 
             "curl")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -69,10 +118,29 @@ show_network_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -83,6 +151,8 @@ show_network_commands() {
                 ;;
 
             "ssh")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -91,10 +161,29 @@ show_network_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)

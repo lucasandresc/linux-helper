@@ -1,14 +1,19 @@
 #!/bin/bash
+show_header () {
+    echo ""
+    echo "                          ╔════════════════════════════════╗"
+    echo "                          ║      File System Commands      ║"
+    echo "                          ║                                ║"
+    echo "                          ║   Navigate, create, modify     ║"
+    echo "                          ║   and manage files and dirs    ║"
+    echo "                          ╚════════════════════════════════╝"
+    echo ""
+
+}
 
 show_system_commands() {
     clear
-    echo ""
-    echo "                          ╔════════════════════════════════╗"
-    echo "                          ║       System Commands          ║"
-    echo "                          ║                                ║"
-    echo "                          ║  Monitor processes, users      ║"
-    echo "                          ║  and system information        ║"
-    echo "                          ╚════════════════════════════════╝"
+    show_header
     echo ""
     echo "Please select an option: "
     echo ""
@@ -18,6 +23,8 @@ show_system_commands() {
     select option in "${system_commands[@]}"; do
         case $option in
             "clear")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -26,10 +33,29 @@ show_system_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -40,6 +66,8 @@ show_system_commands() {
                 ;;
 
             "echo")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -48,10 +76,29 @@ show_system_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -62,6 +109,8 @@ show_system_commands() {
                 ;;
 
             "man")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -70,10 +119,29 @@ show_system_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -84,6 +152,8 @@ show_system_commands() {
                 ;;
 
             "sudo")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -92,10 +162,29 @@ show_system_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -106,6 +195,8 @@ show_system_commands() {
                 ;;
 
             "grep")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -114,10 +205,29 @@ show_system_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -128,6 +238,8 @@ show_system_commands() {
                 ;;
 
             "uname")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -136,10 +248,29 @@ show_system_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -150,6 +281,8 @@ show_system_commands() {
                 ;;
 
             "whoami")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -158,10 +291,29 @@ show_system_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -172,6 +324,8 @@ show_system_commands() {
                 ;;
 
             "chmod")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -180,10 +334,29 @@ show_system_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -194,6 +367,8 @@ show_system_commands() {
                 ;;
 
             "chown")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -202,10 +377,29 @@ show_system_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -216,6 +410,8 @@ show_system_commands() {
                 ;;
 
             "which")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -224,10 +420,29 @@ show_system_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -238,6 +453,8 @@ show_system_commands() {
                 ;;
 
             "history")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -246,10 +463,29 @@ show_system_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -260,6 +496,8 @@ show_system_commands() {
                 ;;
 
             "ps")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -268,10 +506,29 @@ show_system_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -282,6 +539,8 @@ show_system_commands() {
                 ;;
 
             "kill")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -290,10 +549,29 @@ show_system_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -304,6 +582,8 @@ show_system_commands() {
                 ;;
 
             "killall")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -312,10 +592,29 @@ show_system_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -326,6 +625,8 @@ show_system_commands() {
                 ;;
 
             "df")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -334,10 +635,29 @@ show_system_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -348,6 +668,8 @@ show_system_commands() {
                 ;;
 
             "du")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -356,10 +678,29 @@ show_system_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -370,6 +711,8 @@ show_system_commands() {
                 ;;
 
             "nano")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -378,10 +721,29 @@ show_system_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -392,6 +754,8 @@ show_system_commands() {
                 ;;
 
             "vim")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -400,10 +764,29 @@ show_system_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -414,6 +797,8 @@ show_system_commands() {
                 ;;
 
             "nvim")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -422,10 +807,29 @@ show_system_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -436,6 +840,8 @@ show_system_commands() {
                 ;;
 
             "date")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -444,10 +850,29 @@ show_system_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -458,6 +883,8 @@ show_system_commands() {
                 ;;
 
             "uptime")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -466,10 +893,29 @@ show_system_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -480,6 +926,8 @@ show_system_commands() {
                 ;;
 
             "free")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -488,10 +936,29 @@ show_system_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -502,6 +969,8 @@ show_system_commands() {
                 ;;
 
             "lscpu")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -510,10 +979,29 @@ show_system_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)
@@ -524,6 +1012,8 @@ show_system_commands() {
                 ;;
 
             "w")
+                clear
+                show_header
                 echo ""
                 echo "Command: ls"
                 echo "Description: List directory contents"
@@ -532,10 +1022,29 @@ show_system_commands() {
                 select option_mv in "Check command and flags" "See examples" "Back to file commands menu"; do
                     case $option_mv in
                         "Check command and flags")
+                            echo ""
+                            echo "═════ MV COMMAND AND FLAGS ═════"
+                            echo "mv [option] current path -> new path"
+                            echo ""
+                            echo "Main Flags:"
+                            echo "═══════════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "See examples")
+                            echo ""
+                            echo "═════ EXAMPLES OF MV ═════"
+                            echo "══════════════════════════"
+                            read -p "Press enter to return to 'mv' menu... "
+                            echo ""
                             ;;
                         "Back to file commands menu")
+                            clear
+                            show_header
+                            echo ""
+                            echo "Returning to file commands menu."
+                            read -p "Press Enter to continue..."
+                            echo ""
                             break
                             ;;
                         *)

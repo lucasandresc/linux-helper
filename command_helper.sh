@@ -26,7 +26,7 @@ show_main_menu () {
         echo "Please select an option: "
         echo ""
 
-        categories=("File Commands" "System Commands" "Network Commands" "Exit")
+        categories=("File Commands" "System Commands" "Network Commands" "Back to main menu")
 
         select category in "${categories[@]}"; do
             case $category in
@@ -45,9 +45,9 @@ show_main_menu () {
                     show_network_commands
                     break
                     ;;
-                "Exit")
-                    echo "Thanks for using Linux Helper"
-                    exit 0
+                "Back to main menu")
+                    echo "Returning to main menu..."
+                    return
                     ;;
                 *)
                     echo "Invalid option. Please try again"
@@ -56,4 +56,7 @@ show_main_menu () {
         done
     done
 }
-show_main_menu
+
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    show_main_menu
+fi

@@ -1259,3 +1259,8 @@ show_system_commands() {
         esac
     done
 }
+
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    source ./command_helper.sh
+    show_main_menu
+fi

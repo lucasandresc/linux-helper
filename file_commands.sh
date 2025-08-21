@@ -44,7 +44,7 @@ show_file_commands() {
                             echo "-v : Show which files are moving to new path"
                             echo "-u : Only moves if the source file is newer"
                             echo "-n : Do not overwrite existing files"
-                            echo "═══════════════════════════════"
+                            echo "════════════════════════════════════"
                             read -p "Press enter to return to 'mv' menu... "
                             echo ""
                             ;;
@@ -57,7 +57,7 @@ show_file_commands() {
                             echo "mv -v *.txt documents/ -> Moves every .txt file and shows which are moving"
                             echo "mv -n file.txt /home/user/Test/ -> If Test has a file with the same name, It will not move another file with the same name."
                             echo "mv -u file.txt /home/user/Test/ -> If file.txt from home/ is newer than file.txt in Test/, It will mv file.txt from home/ overwriting it in Test/"
-                            echo "══════════════════════════"
+                            echo "═══════════════════════════════"
                             read -p "Press enter to return to 'mv' menu... "
                             echo ""
                             ;;
@@ -98,7 +98,7 @@ show_file_commands() {
                             echo "-h : Sizes in readable format"
                             echo "-R : List recursively"
                             echo "-t : Sort by modification date"
-                            echo "═══════════════════════════════"
+                            echo "════════════════════════════════════"
                             read -p "Press enter to return to 'ls' menu... "
                             echo ""
                             ;;
@@ -111,7 +111,7 @@ show_file_commands() {
                             echo "ls -R -> List everything recursively"
                             echo "ls -lt -> List everything with details, sorted from bottom to top"
                             echo "ls -lah -> List everything with details, including hidden files in readable sizes"
-                            echo "══════════════════════════"
+                            echo "═══════════════════════════════"
                             read -p "Press enter to return to 'ls' menu... "
                             echo ""
                             ;;
@@ -151,7 +151,7 @@ show_file_commands() {
                             echo "-i : Asks the user for confirmation before overwriting"
                             echo "-v : Shows which files are being copied"
                             echo "-p : Preserves permissions and timestamps"
-                            echo "═══════════════════════════════"
+                            echo "════════════════════════════════════"
                             read -p "Press enter to return to 'cp' menu... "
                             echo ""
                             ;;
@@ -162,7 +162,7 @@ show_file_commands() {
                             echo "cp -r folder/ destination/ -> Copy whole directory"
                             echo "cp -iv *.txt backup/ -> Copy with confirmation and detail"
                             echo "cp -p file.txt /home/user/Project -> Copy keeping same permissions and timestamps"
-                            echo "══════════════════════════"
+                            echo "═══════════════════════════════"
                             read -p "Press enter to return to 'cp' menu... "
                             echo ""
                             ;;
@@ -201,7 +201,7 @@ show_file_commands() {
                             echo "-i : Asks for confirmation before deleting"
                             echo "-f : Forces deletion without confirmation"
                             echo "-v : Shows which files are being deleted"
-                            echo "═══════════════════════════════"
+                            echo "════════════════════════════════════"
                             read -p "Press enter to return to 'rm' menu... "
                             echo ""
                             ;;
@@ -212,7 +212,7 @@ show_file_commands() {
                             echo "rm -i *.tmp -> Delete files with confirmation"
                             echo "rm -rf folder/ -> Delete directory and contents without confirmation"
                             echo "rm -v *.tmp -> Delete files showing with detail which files are being deleted"
-                            echo "══════════════════════════"
+                            echo "═══════════════════════════════"
                             read -p "Press enter to return to 'rm' menu... "
                             echo ""
                             ;;
@@ -252,7 +252,7 @@ show_file_commands() {
                             echo "-type : Search by file type (f=file, d=directory)"
                             echo "-size : Search by file size"
                             echo "-exec : Execute command on found files"
-                            echo "═══════════════════════════════"
+                            echo "══════════════════════════════════════"
                             read -p "Press enter to return to 'find' menu... "
                             echo ""
                             ;;
@@ -263,7 +263,7 @@ show_file_commands() {
                             echo "find /home -type d -name 'Documents' -> Find directories named 'Documents' in home/"
                             echo "find . -size +100M -> Find files larger than 100MB in current directory"
                             echo "find . -name '*.log' exec rm {} \; -> Find and delete .log files"
-                            echo "══════════════════════════"
+                            echo "═════════════════════════════════"
                             read -p "Press enter to return to 'find' menu... "
                             echo ""
                             ;;
@@ -304,7 +304,7 @@ show_file_commands() {
                             echo "-c : Do not create file if it doesn't exist"
                             echo "-t : Use specific timestamp"
                             echo "-r : Use timestamp from reference file"
-                            echo "═══════════════════════════════"
+                            echo "═══════════════════════════════════════"
                             read -p "Press enter to return to 'touch' menu... "
                             echo ""
                             ;;
@@ -318,7 +318,7 @@ show_file_commands() {
                             echo "touch -m file.txt -> Update modification time (Pretty similar to flag -a)"
                             echo "touch -t 202507041230 file.txt -> Set a specific time, this means: 2025-07-04 12:30"
                             echo "touch -r file.txt new_file.txt -> Copies timestamp from file.txt to new_file.txt"
-                            echo "══════════════════════════"
+                            echo "══════════════════════════════════"
                             read -p "Press enter to return to 'touch' menu... "
                             echo ""
                             ;;
@@ -360,7 +360,7 @@ show_file_commands() {
                             echo "cd .. : Go to parent directory"
                             echo "cd / : Go to root directory"
                             echo "cd (no args) : Go to home directory"
-                            echo "═══════════════════════════════"
+                            echo "══════════════════════════════════════"
                             read -p "Press enter to return to 'cd' menu... "
                             echo ""
                             ;;
@@ -371,7 +371,7 @@ show_file_commands() {
                             echo "cd .. -> Go up one level -> /home/user/Documents cd .. /home/user"
                             echo "cd ~ -> Go to home directory -> /home/user/Documents/ID/ cd ~ /home/user"
                             echo "cd - -> Switch to previous directory -> /home/user cd /home/user/Documents cd - /home/user cd - /home/user/Documents"
-                            echo "══════════════════════════"
+                            echo "═══════════════════════════════"
                             read -p "Press enter to return to 'cd' menu... "
                             echo ""
                             ;;
@@ -412,7 +412,7 @@ show_file_commands() {
                             echo "-s : Suppress repeated empty lines"
                             echo "-A : Show all characters including non-printing"
                             echo "-v : Show non-printing characters"
-                            echo "═══════════════════════════════"
+                            echo "═════════════════════════════════════"
                             read -p "Press enter to return to 'cat' menu... "
                             echo ""
                             ;;
@@ -427,7 +427,7 @@ show_file_commands() {
                             echo "cat -v file.txt -> Displays character that are not normally print"
                             echo "cat file1.txt file2.txt -> Display multiple files"
                             echo "cat > newfile.txt -> Create file and write content"
-                            echo "══════════════════════════"
+                            echo "════════════════════════════════"
                             read -p "Press enter to return to 'cat' menu... "
                             echo ""
                             ;;
@@ -466,7 +466,7 @@ show_file_commands() {
                             echo "-N : Show line numbers"
                             echo "-S : Chop long lines (don't wrap)"
                             echo "+G : Start at the end of file"
-                            echo "═══════════════════════════════"
+                            echo "══════════════════════════════════════"
                             read -p "Press enter to return to 'less' menu... "
                             echo ""
                             ;;
@@ -477,7 +477,7 @@ show_file_commands() {
                             echo "less -N file.txt -> View with line numbers"
                             echo "less -S file.txt -> Don't wrap long lines"
                             echo "less +G file.txt -> Start at the end of file"
-                            echo "══════════════════════════"
+                            echo "═════════════════════════════════"
                             read -p "Press enter to return to 'less' menu... "
                             echo ""
                             ;;
@@ -516,7 +516,7 @@ show_file_commands() {
                             echo "NOTE: pwd hardly ever need any flags"
                             echo "-L : Print logical current directory (default)"
                             echo "-P : Print physical current directory (resolve sysmlinks)"
-                            echo "═══════════════════════════════"
+                            echo "═════════════════════════════════════"
                             read -p "Press enter to return to 'pwd' menu... "
                             echo ""
                             ;;
@@ -526,7 +526,7 @@ show_file_commands() {
                             echo "pwd -> Shows current directory path"
                             echo "pwd -L -> Shows physical path (Resolves symlinks)"
                             echo "pwd -P -> Shows logical path (With symlinks)"
-                            echo "══════════════════════════"
+                            echo "════════════════════════════════"
                             read -p "Press enter to return to 'pwd' menu... "
                             echo ""
                             ;;
@@ -566,7 +566,7 @@ show_file_commands() {
                             echo "-9 : Best compression level"
                             echo "-1 : Fastest compression"
                             echo "-e : Encrypt archive with password"
-                            echo "═══════════════════════════════"
+                            echo "════════════════════════════════════"
                             read -p "Press enter to return to 'zip' menu... "
                             echo ""
                             ;;
@@ -578,7 +578,7 @@ show_file_commands() {
                             echo "zip -9 compressed.zip *.txt -> Maximum compression"
                             echo "zip -1 compressed.zip *.txt -> Fastest compression"
                             echo "zip -e secure.zip secrets.txt -> Password protected archive"
-                            echo "══════════════════════════"
+                            echo "════════════════════════════════"
                             read -p "Press enter to return to 'zip' menu... "
                             echo ""
                             ;;
@@ -619,7 +619,7 @@ show_file_commands() {
                             echo "-v : Verbose output"
                             echo "-f : Specific filename"
                             echo "-z : Use gzip compressione (.tar.gz)"
-                            echo "═══════════════════════════════"
+                            echo "═════════════════════════════════════"
                             read -p "Press enter to return to 'tar' menu... "
                             echo ""
                             ;;
@@ -630,7 +630,7 @@ show_file_commands() {
                             echo "tar -czvf archive.tar.gz directory/ -> Create compressed archive"
                             echo "tar -xvf archive.tar -> Extract tar archive"
                             echo "tar -xzvf archive.tar.gz -> Extract compressed archive"
-                            echo "══════════════════════════"
+                            echo "════════════════════════════════"
                             read -p "Press enter to return to 'tar' menu... "
                             echo ""
                             ;;
@@ -668,7 +668,7 @@ show_file_commands() {
                             echo "Main Flags:"
                             echo "-n : Number of lines to show (Default: 10)"
                             echo "-c : Number of bytes to show"
-                            echo "═══════════════════════════════"
+                            echo "══════════════════════════════════════"
                             read -p "Press enter to return to 'head' menu... "
                             echo ""
                             ;;
@@ -679,7 +679,7 @@ show_file_commands() {
                             echo "head -n 5 file.txt -> Show first 5 lines"
                             echo "head -c 100 file.txt -> Show first 100 bytes"
                             echo "head -n 20 *.log -> Show first 20 lines of all .log files"
-                            echo "══════════════════════════"
+                            echo "═════════════════════════════════"
                             read -p "Press enter to return to 'head' menu... "
                             echo ""
                             ;;
@@ -718,7 +718,7 @@ show_file_commands() {
                             echo "-n : Number of lines to show (Default: 10)"
                             echo "-c : Number of bytes to show"
                             echo "-f : Follow file changes (live updates)"
-                            echo "═══════════════════════════════"
+                            echo "══════════════════════════════════════"
                             read -p "Press enter to return to 'tail' menu... "
                             echo ""
                             ;;
@@ -729,7 +729,7 @@ show_file_commands() {
                             echo "tail -n 20 file.txt -> Show last 20 lines"
                             echo "tail -f log.txt -> Follow log file in real-time"
                             echo "tail -c 500 file.txt -> Show last 500 bytes"
-                            echo "══════════════════════════"
+                            echo "═════════════════════════════════"
                             read -p "Press enter to return to 'tail' menu... "
                             echo ""
                             ;;
@@ -768,7 +768,7 @@ show_file_commands() {
                             echo "-p : Create parent directories as needed"
                             echo "-v : Verbose mode (Show what's being created)"
                             echo "-m : Set permissions for new directory"
-                            echo "═══════════════════════════════"
+                            echo "═══════════════════════════════════════"
                             read -p "Press enter to return to 'mkdir' menu... "
                             echo ""
                             ;;
@@ -780,7 +780,7 @@ show_file_commands() {
                             echo "mkdir -v new_directory1 new_directory2 -> Create multiple directories"
                             echo "mkdir -m 755 new_directory -> Create with specific permissions"
                             echo "NOTE: You can create hidden directories - mkdir .new_directory -> Create a hidden directory, to display it you need to use ls -a to see all hiddens directories or files"
-                            echo "══════════════════════════"
+                            echo "══════════════════════════════════"
                             read -p "Press enter to return to 'mkdir' menu... "
                             echo ""
                             ;;
@@ -820,7 +820,7 @@ show_file_commands() {
                             echo "-p : Remove parent directories if the become empty"
                             echo "-v : Verbose mode (show what's being removed)"
                             echo "--ignore-fail-on-non-empty : Ignote failure on non-empty dirs"
-                            echo "═══════════════════════════════"
+                            echo "═══════════════════════════════════════"
                             read -p "Press enter to return to 'rmdir' menu... "
                             echo ""
                             ;;
@@ -830,10 +830,10 @@ show_file_commands() {
                             echo "rmdir empty_directory -> Remove empty directory"
                             echo "rmdir -p path/to/empty/directory -> Remove nested empty directories"
                             echo "rmdir -v directory1 directory2 -> Remove multiple directories"
-                            echo "══════════════════════════"
+                            echo "══════════════════════════════════"
                             echo "Alternative for non-empty directories:"
                             echo "rm -r directory -> Remove directory and all contents (You can also use rm -rf)"
-                            echo "══════════════════════════"
+                            echo "══════════════════════════════════"
                             read -p "Press enter to return to 'rmdir' menu... "
                             echo ""
                             ;;
@@ -872,7 +872,7 @@ show_file_commands() {
                             echo "-b : Brief mode (don't show filename)"
                             echo "-i : Show MIME type"
                             echo "-z : Try to look inside compressed files"
-                            echo "═══════════════════════════════"
+                            echo "══════════════════════════════════════"
                             read -p "Press enter to return to 'file' menu... "
                             echo ""
                             ;;
@@ -883,7 +883,7 @@ show_file_commands() {
                             echo "file -b image.jpg -> Brief output without filename"
                             echo "file -i script.sh -> Shows MIME type"
                             echo "file -z script.sh.gz -> Shows what type of file is compressed inside (looks through compression)"
-                            echo "══════════════════════════"
+                            echo "═════════════════════════════════"
                             read -p "Press enter to return to 'file' menu... "
                             echo ""
                             ;;
@@ -924,7 +924,7 @@ show_file_commands() {
                             echo "-c : Count bytes only"
                             echo "-m : Count characters only"
                             echo "-L : Show length of longest line"
-                            echo "═══════════════════════════════"
+                            echo "════════════════════════════════════"
                             read -p "Press enter to return to 'wc' menu... "
                             echo ""
                             ;;
@@ -939,7 +939,7 @@ show_file_commands() {
                             echo "wc *.txt -> Count stats for all .txt files"
                             echo "wc -l *.txt -> Count lines in all .txt files"
                             echo "cat file.txt | wc -l -> Count lines from pipe input"
-                            echo "══════════════════════════"
+                            echo "═══════════════════════════════"
                             read -p "Press enter to return to 'wc' menu... "
                             echo ""
                             ;;

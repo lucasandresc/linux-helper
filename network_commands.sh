@@ -43,7 +43,7 @@ show_network_commands() {
                             echo "-t : Set TTL (Time To Live)"
                             echo "-s : Packet size in bytes"
                             echo "-W : Timeout for response in seconds"
-                            echo "═══════════════════════════════"
+                            echo "═══════════════════════════════════════"
                             read -p "Press enter to return to 'ping' menu... "
                             echo ""
                             ;;
@@ -56,7 +56,7 @@ show_network_commands() {
                             echo "ping -s 1000 google.com -> Send packets of 1000 bytes"
                             echo "ping -W 5 192.168.1.1 -> Wait 5 seconds for response"
                             echo "ping -t 64 google.com -> Set TTL to 64"
-                            echo "══════════════════════════"
+                            echo "═════════════════════════════════"
                             read -p "Press enter to return to 'ping' menu... "
                             echo ""
                             ;;
@@ -98,7 +98,7 @@ show_network_commands() {
                             echo "-r : Download recursively"
                             echo "-np : No parent directories when recursive"
                             echo "-q : Quiet mode (no output)"
-                            echo "═══════════════════════════════"
+                            echo "══════════════════════════════════════"
                             read -p "Press enter to return to 'wget' menu... "
                             echo ""
                             ;;
@@ -111,7 +111,7 @@ show_network_commands() {
                             echo "wget -c https://example.com/largefile.zip -> Resume interrupted download"
                             echo "wget -r -np https://example.com/docs/ -> Download entire website directory"
                             echo "wget -q https://example.com/file.zip -> Download quietly"
-                            echo "══════════════════════════"
+                            echo "═════════════════════════════════"
                             read -p "Press enter to return to 'wget' menu... "
                             echo ""
                             ;;
@@ -153,7 +153,7 @@ show_network_commands() {
                             echo "-X : Specify HTTP method (GET, POST, etc.)"
                             echo "-H : Add custom header"
                             echo "-d : Send data with POST request"
-                            echo "═══════════════════════════════"
+                            echo "══════════════════════════════════════"
                             read -p "Press enter to return to 'curl' menu... "
                             echo ""
                             ;;
@@ -166,7 +166,7 @@ show_network_commands() {
                             echo "curl -L https://short.url/redirect -> Follow redirects"
                             echo "curl -X POST -d 'data=value' https://api.example.com -> Send POST request"
                             echo "curl -H 'Authorization: Bearer token' https://api.example.com -> Add custom header"
-                            echo "══════════════════════════"
+                            echo "═════════════════════════════════"
                             read -p "Press enter to return to 'curl' menu... "
                             echo ""
                             ;;
@@ -208,7 +208,7 @@ show_network_commands() {
                             echo "-R : Remote port forwarding"
                             echo "-X : Enable X11 forwarding"
                             echo "-v : Verbose mode for debugging"
-                            echo "═══════════════════════════════"
+                            echo "═════════════════════════════════════"
                             read -p "Press enter to return to 'ssh' menu... "
                             echo ""
                             ;;
@@ -221,7 +221,7 @@ show_network_commands() {
                             echo "ssh -L 8080:localhost:80 user@server.com -> Local port forwarding"
                             echo "ssh -X user@server.com -> Enable X11 forwarding for GUI apps"
                             echo "ssh -v user@server.com -> Verbose output for troubleshooting"
-                            echo "══════════════════════════"
+                            echo "════════════════════════════════"
                             read -p "Press enter to return to 'ssh' menu... "
                             echo ""
                             ;;
